@@ -1,0 +1,29 @@
+{
+  "name": "cpxapi-node",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "13.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "form-data": "^4.0.0",
+    "http-errors": "~1.6.3",
+    "imagekit": "^3.2.4",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.2",
+    "pem": "^1.14.4",
+    "pug": "2.0.0-beta11",
+    "request-ip": "^2.1.3",
+    "uuid": "^8.3.2"
+  }
+}
