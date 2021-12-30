@@ -182,9 +182,8 @@ router.post('/sendmsg', async function (req, res, next) {
     
   })
 
-router.get('/', async function (req, res, next) {
-    // const resp = await getSpotAPIKey();
-    res.json({msg: 'OK'})
+  router.get('/', function (req, res, next) {
+    res.redirect("https://myportofficial.chinnathornp.ga")
   })
 
   module.exports = router;

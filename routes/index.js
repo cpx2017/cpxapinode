@@ -12,10 +12,6 @@ router.get('/status', function (req, res, next) {
   res.send("OK")
 })
 
-router.get('/myportofficial', function (req, res, next) {
-  res.redirect("https://myportofficial.chinnathornp.ga")
-})
-
 async function Covid(cc) {
   const response = await apix({
       url: "https://disease.sh/v3/covid-19/countries/" + cc,

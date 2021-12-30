@@ -10,6 +10,10 @@ const nodemailer = require("nodemailer");
 const radioFunc = require('../functions/radiofetch');
 const { Coolism, HitzDetail, EazyDetail, ChillDetail, EFMDetail, GreenDetail, WhitePopDetail, HotWaveDetail, CassetteDetail } = radioFunc
 
+router.get('/', function (req, res, next) {
+    res.redirect("https://radioth.chinnathornp.ga")
+  })
+
 router.post('/getjsonapi', async function (req, res, next) {
     const radioch = req.query.station;
     switch (radioch) {
