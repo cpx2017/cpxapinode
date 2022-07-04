@@ -30,11 +30,11 @@ const con = sql.createConnection({
 
 async function getSpotAPIKey() {
     const response = await apix({
-        url: "https://accounts.spotify.com/api/token?grant_type=refresh_token&refresh_token=AQAqFgPpzsOB_S5iNKT_LPdQD4TBrLzM_VqtWImZD7OZiyZwHJZVmPi3rTBb1R_U6CwSUHedMi6ANKtvjCx5wFsj9X5jZx_8WmoWsL1jbBV1X21sQ1Yfa8vwq4dFEucBkCM",
+        url: "https://accounts.spotify.com/api/token?grant_type=refresh_token&refresh_token=<Refresh Token>",
         method: 'post',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Authorization': 'Basic OGVkYWQzMTQ5OGM3NGJkZmJhYTcwZWRhN2NhMzNkNDY6M2YyZTY4ZTJmMTYyNDY1MDhjZGM3YjU5MzQ3ODlmZGY='
+            'Authorization': 'Basic <Your TOKEN Key>'
           }
     });
     return response.data.access_token;
@@ -52,7 +52,7 @@ async function LineNoti1(bdy, uid, fle) {
       method: 'post',
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-          'Authorization': 'Bearer xWbgb55mVGnhmh6iePIfG4OuFWVMkMJsY5DxNeTKQpC'
+          'Authorization': 'Bearer <Line Token>'
         }
   });
 }
@@ -75,8 +75,8 @@ async function mailSender1(tarmail, lang) {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "f2d9c20b197d784d17e2ff0d45abd69f", // generated ethereal user
-      pass: "c80c37907599381df8f4bb28a569ee9a", // generated ethereal password
+      user: "<usr>", // generated ethereal user
+      pass: "<pss>", // generated ethereal password
     },
   });
 
@@ -127,7 +127,7 @@ async function LineNoti2(bdy) {
       method: 'post',
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-          'Authorization': 'Bearer zbPcg1tvsr7i8QjBro40Tn3BkxMyPBf6CW4TkVuYKDV'
+          'Authorization': 'Bearer <Line Token>'
         }
   });
 }
